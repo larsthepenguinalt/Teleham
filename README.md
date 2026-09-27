@@ -11,12 +11,12 @@ You can use the keypad on most ham radios while pressing PTT to send DTMF tones,
 # Legality
 The big part of this not being allowed under normal part 97 rules is that the computer is transmitting without a person involved.<br>
 I believe this to still be legal. Here is why:<br>
-<ol>
-<li>§97.221(b) allows for a station to be automatically controlled while: "transmitting ... <b>data</b> emission on the <b>6 m or shorter</b> wavelength bands." This is covered assuming what we are doing counts as a wavelength transmission, as cheap radios use VHF (2m) or UHF (70cm) bands.</li>
-<li>§97.3(c)(2) defines data as: "Telemetry, telecommand and computer communications emissions having designators with A, C, D, <b>F</b>, G, H, J or R as the first symbol, <b>1</b> as the second symbol, and <b>D</b> as the third symbol." We should count under this as we use FM (F as first symbol), most modern radios use VCOs with a digital square wave output as the modulating signal ("Digital, on-off or quantized, no modulation", 1 as second symbol), and finally we are using telemetry and telecommand (D as 3rd symbol).</li>
-</ol>
-Assuming we are using VHF/UHF with FM for telemetry and telecommands with a digital modulating signal, we should be legal.<br>
-<a href="https://www.ominous-valve.com/emission.txt">Resource describing emission designators</a><br>
+<ul>
+<li>47 CFR §97.221(b) permits automatically controlled amateur stations to transmit data emissions on the 6-meter and shorter-wavelength bands.</li>
+<li>Teleham transmits telemetry and telecommand using FM on VHF/UHF. Under §97.3(c)(2), telemetry, telecommand, and computer communications are explicitly included in the definition of a data emission.</li>
+<li>The computer generates the modulation digitally. Although the sound card converts the digitally quantized signal into an analog waveform before it reaches the radio, the transmitted information remains digitally encoded telemetry and telecommand. The FM transmitter therefore carries data rather than voice.</li>
+<li>Because VHF and UHF are shorter than 6 meters, Teleham's automatically generated data transmissions fall within the frequency range specified by §97.221(b).</li>
+</ul>
 If anyone wants to prove me wrong though, please tell me.
 
 # DTMF codes
