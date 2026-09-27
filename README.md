@@ -14,7 +14,6 @@ I believe this to still be legal. Here is why:<br>
 <ul>
 <li>47 CFR §97.221(b) permits automatically controlled amateur stations to transmit data emissions on the 6-meter and shorter-wavelength bands.</li>
 <li>Teleham transmits telemetry and telecommand using FM on VHF/UHF. Under §97.3(c)(2), telemetry, telecommand, and computer communications are explicitly included in the definition of a data emission.</li>
-<li>The computer generates the modulation digitally. Although the sound card converts the digitally quantized signal into an analog waveform before it reaches the radio, the transmitted information remains digitally encoded telemetry and telecommand. The FM transmitter therefore carries data rather than voice.</li>
 <li>Because VHF and UHF are shorter than 6 meters, Teleham's automatically generated data transmissions fall within the frequency range specified by §97.221(b).</li>
 </ul>
 If anyone wants to prove me wrong though, please tell me.
